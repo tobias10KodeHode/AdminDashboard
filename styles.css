@@ -12,12 +12,15 @@ nav {
     height: 100vh;
     width: 240px;
     color: white;
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
 nav ul {
+    display: grid;
+    gap: 40px;
     color: white;
+    list-style: none;
 }
