@@ -7,20 +7,24 @@
     font-family: "Ubuntu", sans-serif;
 }
 
+body {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+
 nav {
     background-color: rgb(59, 59, 59);
     height: 100vh;
-    width: 240px;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-nav ul {
     display: grid;
     gap: 40px;
+    justify-content: center;
+    align-items: center;
     color: white;
     list-style: none;
+}
+
+nav button {
+    background-color: white;
+    border: none;
 }

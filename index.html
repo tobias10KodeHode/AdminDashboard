@@ -4,26 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Admin Dashboard</title>
   </head>
 
   <body>
     <header>
       <nav>
-        <ul>
-          <li>Dashboard</li>
-          <li>Manage Team</li>
-          <li>Products</li>
-          <li>Inventory</li>
-          <li>Orders</li>
-          <li>Reports</li>
-          <li>Settings</li>
-        </ul>
+        <h3>Admin Dashboard</h3>
+        <button onclick="navigateTo('./pages/Dashboard/dashboard.html');">Dashboard</button>
+        <button onclick="navigateTo('./pages/ManageTeam/manager.html');">Manage Team</button>
+        <button onclick="navigateTo('./pages/Products/products.html');">Products</button>
+        <button onclick="navigateTo('./pages/Inventory/inventory.html');">Inventory</button>
+        <button onclick="navigateTo('./pages/Orders/orders.html');">Orders</button>
+        <button onclick="navigateTo('./pages/Reports/reports.html');">Reports</button>
+        <button onclick="navigateTo('./pages/Innstillinger/settings.html');">Settings</button>
       </nav>
     </header>
     <main>
-        
+      <iframe id="content" src="./pages/Dashboard/dashboard.html"  frameborder="0"></iframe>
     </main>
   </body>
 </html>
